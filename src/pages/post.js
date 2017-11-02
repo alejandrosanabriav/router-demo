@@ -4,7 +4,6 @@ import Menu from '../components/menu';
 class Post extends Component {
   render() {
     const { match } = this.props;
-    console.log(match);
     let post = posts.filter(post => post.id === parseInt(match.params.postId));
     post = post[0];
 

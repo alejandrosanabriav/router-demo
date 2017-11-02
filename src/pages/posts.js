@@ -3,7 +3,6 @@ import { Link, Route } from 'react-router-dom';
 import posts from '../data/posts';
 import Menu from '../components/menu';
 
-
 class Posts extends Component {
 
   render() {
@@ -16,7 +15,7 @@ class Posts extends Component {
             <Link to={`/post/${post.id}`}>
             <h4>{post.title}</h4>
             <p>{post.excerpt}</p>
-            <span>Author: {post.author}</span>
+            <span>{post.author}</span>
             </Link>
           </article>
         )}
